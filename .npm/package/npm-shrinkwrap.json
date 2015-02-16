@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "mqtt-regex": {
+      "version": "1.0.2",
+      "dependencies": {
+        "escape-string-regexp": {
+          "version": "1.0.2"
+        }
+      }
+    }
+  }
+}
