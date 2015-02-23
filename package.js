@@ -1,6 +1,6 @@
 Package.describe({
   name: 'mkarliner:mqtt-regex',
-  version: '0.0.2',
+  version: '0.0.6',
   // Brief, one-line summary of the package.
   summary: 'Converts MQTT topic with parameters into regular express.',
   // URL to the Git repository containing the source code for this package.
@@ -15,9 +15,9 @@ Npm.depends({
 });
 
 Package.onUse(function(api) {
-  api.export("mqtt_regex");
+  api.addFiles('browserRegex.js');
+//  api.export("mqttregex");
   api.versionsFrom('1.0.3.1');
-  api.addFiles('mkarliner:mqtt-regex.js');
 });
 
 Package.onTest(function(api) {
